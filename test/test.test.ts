@@ -5,7 +5,7 @@ import * as Test from '../lib/test-stack';
 test('Empty Stack', () => {
     const app = new cdk.App();
     // WHEN
-    const stack = new Test.TestStack(app, 'MyTestStack');
+    const stack = new Test.MyPipelineStack(app, 'MyTestStack');
     // THEN
     expectCDK(stack).to(matchTemplate({
       "Resources": {}
