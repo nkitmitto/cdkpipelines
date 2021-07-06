@@ -1,0 +1,168 @@
+{
+  "version": "12.0.0",
+  "artifacts": {
+    "PipelineStackProdbucket190982199.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "PipelineStackProdbucket190982199.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "PipelineStackProdbucket190982199": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://394979472778/us-east-1",
+      "properties": {
+        "templateFile": "PipelineStackProdbucket190982199.template.json",
+        "validateOnSynth": true,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::394979472778:role/cdk-hnb659fds-deploy-role-394979472778-us-east-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::394979472778:role/cdk-hnb659fds-cfn-exec-role-394979472778-us-east-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-394979472778-us-east-1/9a2ba79947ecaf6cbb8f216ca3c4bf26ac8b453b4d14b90ef0331e3d9d9e28bc.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "PipelineStackProdbucket190982199.assets"
+        ],
+        "stackName": "Prod-bucket1"
+      },
+      "dependencies": [
+        "PipelineStackProdbucket190982199.assets"
+      ],
+      "metadata": {
+        "/PipelineStack/Prod/bucket1/newbucket1/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "newbucket11DE1E76F",
+            "trace": [
+              "new Bucket (/home/ec2-user/cdkpipelines/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:713:22)",
+              "new s3Stack (/home/ec2-user/cdkpipelines/lib/test-stack.ts:13:5)",
+              "new MyApplication (/home/ec2-user/cdkpipelines/lib/test-stack.ts:22:5)",
+              "new MyPipelineStack (/home/ec2-user/cdkpipelines/lib/test-stack.ts:57:34)",
+              "Object.<anonymous> (/home/ec2-user/cdkpipelines/bin/test.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/home/ec2-user/cdkpipelines/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/ec2-user/cdkpipelines/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/home/ec2-user/cdkpipelines/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/ec2-user/cdkpipelines/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/PipelineStack/Prod/bucket1/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/home/ec2-user/cdkpipelines/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/home/ec2-user/cdkpipelines/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/home/ec2-user/cdkpipelines/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/home/ec2-user/cdkpipelines/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/home/ec2-user/cdkpipelines/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/home/ec2-user/cdkpipelines/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "MyApplication.synth (/home/ec2-user/cdkpipelines/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "CdkStage.addApplication (/home/ec2-user/cdkpipelines/node_modules/@aws-cdk/pipelines/lib/stage.ts:53:26)",
+              "CdkPipeline.addApplicationStage (/home/ec2-user/cdkpipelines/node_modules/@aws-cdk/pipelines/lib/pipeline.ts:157:11)",
+              "new MyPipelineStack (/home/ec2-user/cdkpipelines/lib/test-stack.ts:57:14)",
+              "Object.<anonymous> (/home/ec2-user/cdkpipelines/bin/test.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/home/ec2-user/cdkpipelines/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/ec2-user/cdkpipelines/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/home/ec2-user/cdkpipelines/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/ec2-user/cdkpipelines/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/PipelineStack/Prod/bucket1/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion",
+            "trace": [
+              "addBootstrapVersionRule (/home/ec2-user/cdkpipelines/node_modules/@aws-cdk/core/lib/stack-synthesizers/default-synthesizer.ts:447:17)",
+              "DefaultStackSynthesizer.synthesize (/home/ec2-user/cdkpipelines/node_modules/@aws-cdk/core/lib/stack-synthesizers/default-synthesizer.ts:274:7)",
+              "/home/ec2-user/cdkpipelines/node_modules/@aws-cdk/core/lib/private/synthesis.ts:184:29",
+              "visit (/home/ec2-user/cdkpipelines/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/home/ec2-user/cdkpipelines/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "synthesizeTree (/home/ec2-user/cdkpipelines/node_modules/@aws-cdk/core/lib/private/synthesis.ts:176:3)",
+              "Object.synthesize (/home/ec2-user/cdkpipelines/node_modules/@aws-cdk/core/lib/private/synthesis.ts:39:3)",
+              "MyApplication.synth (/home/ec2-user/cdkpipelines/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "CdkStage.addApplication (/home/ec2-user/cdkpipelines/node_modules/@aws-cdk/pipelines/lib/stage.ts:53:26)",
+              "CdkPipeline.addApplicationStage (/home/ec2-user/cdkpipelines/node_modules/@aws-cdk/pipelines/lib/pipeline.ts:157:11)",
+              "new MyPipelineStack (/home/ec2-user/cdkpipelines/lib/test-stack.ts:57:14)",
+              "Object.<anonymous> (/home/ec2-user/cdkpipelines/bin/test.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/home/ec2-user/cdkpipelines/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/ec2-user/cdkpipelines/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/home/ec2-user/cdkpipelines/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/ec2-user/cdkpipelines/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/PipelineStack/Prod/bucket1/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion",
+            "trace": [
+              "addBootstrapVersionRule (/home/ec2-user/cdkpipelines/node_modules/@aws-cdk/core/lib/stack-synthesizers/default-synthesizer.ts:457:3)",
+              "DefaultStackSynthesizer.synthesize (/home/ec2-user/cdkpipelines/node_modules/@aws-cdk/core/lib/stack-synthesizers/default-synthesizer.ts:274:7)",
+              "/home/ec2-user/cdkpipelines/node_modules/@aws-cdk/core/lib/private/synthesis.ts:184:29",
+              "visit (/home/ec2-user/cdkpipelines/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/home/ec2-user/cdkpipelines/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "synthesizeTree (/home/ec2-user/cdkpipelines/node_modules/@aws-cdk/core/lib/private/synthesis.ts:176:3)",
+              "Object.synthesize (/home/ec2-user/cdkpipelines/node_modules/@aws-cdk/core/lib/private/synthesis.ts:39:3)",
+              "MyApplication.synth (/home/ec2-user/cdkpipelines/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "CdkStage.addApplication (/home/ec2-user/cdkpipelines/node_modules/@aws-cdk/pipelines/lib/stage.ts:53:26)",
+              "CdkPipeline.addApplicationStage (/home/ec2-user/cdkpipelines/node_modules/@aws-cdk/pipelines/lib/pipeline.ts:157:11)",
+              "new MyPipelineStack (/home/ec2-user/cdkpipelines/lib/test-stack.ts:57:14)",
+              "Object.<anonymous> (/home/ec2-user/cdkpipelines/bin/test.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/home/ec2-user/cdkpipelines/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/ec2-user/cdkpipelines/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/home/ec2-user/cdkpipelines/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/ec2-user/cdkpipelines/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ]
+      },
+      "displayName": "PipelineStack/Prod/bucket1"
+    }
+  }
+}

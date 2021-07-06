@@ -1,0 +1,24 @@
+{
+  "Resources": {
+    "testBucket2newbucket2EEC1EF66": {
+      "Type": "AWS::S3::Bucket",
+      "Properties": {
+        "BucketName": "nk-ginger-test222"
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "Retain",
+      "Metadata": {
+        "aws:cdk:path": "TestStack2/testBucket2/newbucket2/Resource"
+      }
+    },
+    "CDKMetadata": {
+      "Type": "AWS::CDK::Metadata",
+      "Properties": {
+        "Analytics": "v2:deflate64:H4sIAAAAAAAAA02MQQqDMBBFz9L9OGYQCt2VegN7gjBOIYYmkEl0EXL3tgrS1X+L/x5hJXNDc7nbTTuefc8xCdZntuxhjEFzKpxhfIVJNJbE0oDI/Bv1BzpgfRT2sn8ParDHzkprEOIsuGi/0hWHb2RR57pUQnZvwenYD0B+bOeUAAAA"
+      },
+      "Metadata": {
+        "aws:cdk:path": "TestStack2/CDKMetadata/Default"
+      }
+    }
+  }
+}
