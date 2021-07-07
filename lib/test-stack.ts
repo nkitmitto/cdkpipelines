@@ -12,7 +12,7 @@ export class s3Stack extends Stack {
 
     new Bucket(this, 'newbucket1', {
       bucketName: 'nk-ginger-test111',
-      publicReadAccess: false
+      versioned: true
     })
   };
 }
