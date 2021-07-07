@@ -11,8 +11,7 @@ export class s3Stack extends Stack {
     super(scope, id, props);
 
     new Bucket(this, 'newbucket1', {
-      bucketName: 'nk-ginger-test111',
-      versioned: true
+      bucketName: 'nk-ginger-test111'
     })
   };
 }
